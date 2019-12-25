@@ -360,23 +360,31 @@ img{
     height: auto;
 }
 
-h1{
-    
-    font-family: Arial, Helvetica, sans-serif;
-   
-font-size: 81px;
-color:#C93756;
-}
-
 .overlay{
     position: relative;
 }
 
-.onlay{
-    position: absolute;
-    top: 0;
-    left: 15%;
-    width: 100%;
-    -webkit-transform: translateY(200%);
-            transform: translateY(200%);
-}
+.overlay__text-content{
+        position: absolute;
+        top:0;
+        left: 15%;
+        -webkit-transform:translateY(200%);
+                transform:translateY(200%);
+    }
+
+.overlay__title{
+        font-size: 65px;
+        color:#C93756;
+
+    }
+
+.overlay__content{
+        font-size: 20px;
+        color: #044F67;
+
+    }
+
+.overlay__link{
+        color:#CA6924;
+        
+    }

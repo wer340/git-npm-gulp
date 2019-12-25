@@ -1,0 +1,12 @@
+h1{
+   color: #22A7F0; 
+   font-size: 12px;
+   font-family: fantasy;
+   -webkit-columns: 300px 2;
+      -moz-columns: 300px 2;
+           columns: 300px 2;
+}
+body h1 a{
+         color:#DB5A6B;
+         font-size: 24px;
+      }

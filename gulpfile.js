@@ -1,23 +1,25 @@
 var gulp =require("gulp"),
-watch=require('gulp-watch');
-
-gulp.task('html',function(){
-
-    console.log("hi my glourian ");
-});
-gulp.task('css',function(){
-    console.log("hi mr");
-})
+watch=require('gulp-watch'),
+autoprefixer=require('autoprefixer')
+postcss=require('gulp-postcss')
+cssnested=require('postcss-nested')
+cssvars=require('postcss-simple-vars')
+cssrename=require('postcss-class-rename')
+;
 
 
 
-gulp.task('watch',function(){
-watch('./index.html',function(){
-gulp.start('html');
-});
-watch('./asset/*.css',function(){
-    gulp.start('css');
-    });
+function css(){
+    return gulp.src('./asset/main.css')
+    .pipe(postcss([cssvars,cssnested]))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./'));
+}
 
 
-});
+gulp.task(css);
+
+function watche(){
+    watch(['./asset/main.css'],gulp.series(css))
+}
+gulp.task(watche);

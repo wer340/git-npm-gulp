@@ -5,13 +5,14 @@ postcss=require('gulp-postcss')
 cssnested=require('postcss-nested')
 cssvars=require('postcss-simple-vars')
 cssrename=require('postcss-class-rename')
-;
+cssImport = require('postcss-import');
+
 
 
 
 function css(){
-    return gulp.src('./asset/main.css')
-    .pipe(postcss([cssvars,cssnested]))
+    return gulp.src('./asset/css/main.css')
+    .pipe(postcss([cssImport,cssvars,cssnested]))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./'));
 }
@@ -20,6 +21,6 @@ function css(){
 gulp.task(css);
 
 function watche(){
-    watch(['./asset/main.css'],gulp.series(css))
+    watch(['./asset/css/main.css','./asset/css/**/*.css'],gulp.series(css))
 }
 gulp.task(watche);

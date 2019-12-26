@@ -373,18 +373,35 @@ img{
     }
 
 .overlay__title{
-        font-size: 65px;
+        font-size: 63px;
         color:#C93756;
 
     }
 
 .overlay__content{
-        font-size: 20px;
-        color: #044F67;
+        font-size: 23px;
+        color: #C93756;
 
     }
 
 .overlay__link{
         color:#CA6924;
         
+    }
+
+.btn{
+    background-color: #FFA400;
+    color:#fff;
+    padding:.75rem 1.2rem;
+    display: inline-block;
+    text-decoration:none;
+}
+
+.btn--large{
+        font-size: 1.25rem;
+        padding: 1.1rem 1.9rem;
+    }
+
+.btn--orange{
+        background-color: #FFA400;
     }

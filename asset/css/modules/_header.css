@@ -11,13 +11,13 @@
     }
 
     &__title{
-        font-size: 65px;
+        font-size: 63px;
         color:$red;
 
     }
     &__content{
-        font-size: 20px;
-        color: $navyblue;
+        font-size: 23px;
+        color: $red;
 
     }
     &__link{

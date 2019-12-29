@@ -9,8 +9,16 @@
 </head>
 <body>
     <div class="overlay">
-        
-    <img  src="asset/image/island.jpg" alt="island">
+        <picture>
+    <!-- <img  src="asset/image/4.jpg" alt="island"> -->
+    <!-- <img srcset="asset/image/1.jpg 700w,asset/image/2.jpg 900w,asset/image/3.jpg 1200w"  alt="jf"> -->
+<picture>
+<source srcset="asset/image/1.jpg "  media="(min-width:200px)">
+<source srcset="asset/image/2.jpg " media="(min-width:700px)">
+<source srcset="asset/image/3.jpg" media="(min-width:900px)"> 
+<img src="asset/image/4.jpg 1100w" alt="asset/image/4.jpg ">
+</picture>
+    </picture>
     <div class="overlay__text-content">
     <h1 class="overlay__title">hi myf w? <a href="" class="overlay__link">World Frienship</a></h1>
 </div>

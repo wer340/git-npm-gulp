@@ -1,0 +1,14 @@
+h1 > span{
+color: blue;
+
+}
+
+.asset {
+    display: block;
+    margin: 0 auto;
+
+    @mixin atSmall {
+      position: absolute;
+      left: 0;
+    }
+  }
